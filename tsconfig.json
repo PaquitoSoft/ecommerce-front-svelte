@@ -1,3 +1,13 @@
 {
-	"extends": "./.svelte-kit/tsconfig.json"
+	"extends": "./.svelte-kit/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "$ds/*": ["src/components/ds/*"],
+      "$icons/*": ["src/components/ds/iconography/*"],
+      "$components/*": ["src/components/*"],
+      "$types/*": ["src/types/*"],
+      "$lib":["src/lib"],
+      "$lib/*":["src/lib/*"]
+    }
+  }
 }
