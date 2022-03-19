@@ -1,7 +1,8 @@
-<script>
-  import LinksGrid from '../../../../../components/links-grid/links-grid.svelte';
+<script lang="ts">
+  import type Category from '$types/category';
+  import LinksGrid from '$components/links-grid/links-grid.svelte';
 
-	export let categories = [];
+	export let categories: Category[] = [];
 
   function linksDataFromCategory(category) {
     return category.subcategories.map(subcategory => ({

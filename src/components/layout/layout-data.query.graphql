@@ -1,0 +1,24 @@
+query LayoutData {
+  categoriesTree {
+    id
+    code
+    name
+    subcategories {
+      id
+      code
+      name
+      subcategories {
+        id
+        code
+        name
+      }
+    }
+  }
+  footerLinks {
+    title
+    links {
+      name
+      href
+    }
+  }
+}
